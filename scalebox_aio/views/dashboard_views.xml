@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2026 Scalebox For Digital Services. All Rights Reserved. -->
+<odoo>
+
+    <record id="view_scalebox_dashboard_form" model="ir.ui.view">
+        <field name="name">scalebox.dashboard.form</field>
+        <field name="model">scalebox.dashboard</field>
+        <field name="arch" type="xml">
+            <form string="Dashboard" create="false" delete="false" duplicate="false">
+                <sheet>
+                    <field name="currency_id" invisible="1"/>
+                    <field name="company_id" invisible="1"/>
+                    <div class="d-flex align-items-center mb-3" style="gap: 16px; flex-wrap: wrap;">
+                        <h1 class="mb-0">📊 Scalebox Dashboard</h1>
+                        <div class="d-flex align-items-center" style="gap: 8px;">
+                            <label for="date_from" string="From"/>
+                            <field name="date_from" nolabel="1" style="max-width: 130px;"/>
+                            <label for="date_to" string="To"/>
+                            <field name="date_to" nolabel="1" style="max-width: 130px;"/>
+                            <button name="action_refresh" type="object" string="Refresh"
+                                    class="btn btn-primary btn-sm" icon="fa-refresh"/>
+                        </div>
+                    </div>
+
+                    <!-- Sales row -->
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-3 col-sm-6">
+                            <div style="background: linear-gradient(135deg, #11998e, #38ef7d); color: white; border-radius: 14px; padding: 16px; min-height: 120px;">
+                                <div style="font-size: 13px; opacity: 0.9;">Today Sales</div>
+                                <div style="font-size: 25px; font-weight: bold;"><field name="sales_today" readonly="1" nolabel="1"/></div>
+                                <button name="action_open_sales" type="object" string="Details"
+                                        class="btn btn-sm p-0" style="color: white; text-decoration: underline;" icon="fa-external-link"/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div style="background: linear-gradient(135deg, #2193b0, #6dd5ed); color: white; border-radius: 14px; padding: 16px; min-height: 120px;">
+                                <div style="font-size: 13px; opacity: 0.9;">Sales (Period)</div>
+                                <div style="font-size: 25px; font-weight: bold;"><field name="sales_period" readonly="1" nolabel="1"/></div>
+                                <div style="font-size: 12px; opacity: 0.9;">Operations: <field name="sales_count" readonly="1" nolabel="1"/></div>
+                                <button name="action_open_sales" type="object" string="Details"
+                                        class="btn btn-sm p-0" style="color: white; text-decoration: underline;" icon="fa-external-link"/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div style="background: linear-gradient(135deg, #ee9ca7, #c0392b); color: white; border-radius: 14px; padding: 16px; min-height: 120px;">
+                                <div style="font-size: 13px; opacity: 0.9;">Sales Returns (Period)</div>
+                                <div style="font-size: 25px; font-weight: bold;"><field name="sale_returns_period" readonly="1" nolabel="1"/></div>
+                                <button name="action_open_sale_returns" type="object" string="Details"
+                                        class="btn btn-sm p-0" style="color: white; text-decoration: underline;" icon="fa-external-link"/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div style="background: linear-gradient(135deg, #136a8a, #267871); color: white; border-radius: 14px; padding: 16px; min-height: 120px;">
+                                <div style="font-size: 13px; opacity: 0.9;">Net Sales (Period)</div>
+                                <div style="font-size: 25px; font-weight: bold;"><field name="net_sales_period" readonly="1" nolabel="1"/></div>
+                                <button name="action_open_analytics" type="object" string="Details"
+                                        class="btn btn-sm p-0" style="color: white; text-decoration: underline;" icon="fa-external-link"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- POS / Purchases / Expenses row -->
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-3 col-sm-6">
+                            <div style="background: linear-gradient(135deg, #7f00ff, #e100ff); color: white; border-radius: 14px; padding: 16px; min-height: 120px;">
+                                <div style="font-size: 13px; opacity: 0.9;">POS Sales (Today)</div>
+                                <div style="font-size: 25px; font-weight: bold;"><field name="pos_sales_today" readonly="1" nolabel="1"/></div>
+                                <button name="action_open_pos_orders" type="object" string="Details"
+                                        class="btn btn-sm p-0" style="color: white; text-decoration: underline;" icon="fa-external-link"/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div style="background: linear-gradient(135deg, #8e2de2, #4a00e0); color: white; border-radius: 14px; padding: 16px; min-height: 120px;">
+                                <div style="font-size: 13px; opacity: 0.9;">POS Sales (Period)</div>
+                                <div style="font-size: 25px; font-weight: bold;"><field name="pos_sales_period" readonly="1" nolabel="1"/></div>
+                                <button name="action_open_pos_orders" type="object" string="Details"
+                                        class="btn btn-sm p-0" style="color: white; text-decoration: underline;" icon="fa-external-link"/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div style="background: linear-gradient(135deg, #f7971e, #ffd200); color: #5d4000; border-radius: 14px; padding: 16px; min-height: 120px;">
+                                <div style="font-size: 13px; opacity: 0.85;">Purchases (Period)</div>
+                                <div style="font-size: 22px; font-weight: bold;"><field name="purchases_period" readonly="1" nolabel="1"/></div>
+                                <div style="font-size: 12px; opacity: 0.85;">Returns: <field name="purchase_returns_period" readonly="1" nolabel="1"/></div>
+                                <button name="action_open_purchases" type="object" string="Details"
+                                        class="btn btn-sm p-0" style="color: #5d4000; text-decoration: underline;" icon="fa-external-link"/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div style="background: linear-gradient(135deg, #ed213a, #93291e); color: white; border-radius: 14px; padding: 16px; min-height: 120px;">
+                                <div style="font-size: 13px; opacity: 0.9;">Expenses (Period)</div>
+                                <div style="font-size: 25px; font-weight: bold;"><field name="expenses_period" readonly="1" nolabel="1"/></div>
+                                <div style="font-size: 12px; opacity: 0.9;">Vouchers: <field name="expenses_count" readonly="1" nolabel="1"/></div>
+                                <button name="action_open_expenses" type="object" string="Details"
+                                        class="btn btn-sm p-0" style="color: white; text-decoration: underline;" icon="fa-external-link"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Financial positions row -->
+                    <div class="row g-3 mb-2">
+                        <div class="col-md-3 col-sm-6">
+                            <div style="background: linear-gradient(135deg, #1a1a2e, #16213e); color: #38ef7d; border-radius: 14px; padding: 16px; min-height: 120px; border: 1px solid #38ef7d;">
+                                <div style="font-size: 13px; color: white; opacity: 0.9;">Net of the Period (After Returns &amp; Expenses)</div>
+                                <div style="font-size: 25px; font-weight: bold;"><field name="net_period" readonly="1" nolabel="1"/></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div style="background: linear-gradient(135deg, #00b09b, #96c93d); color: white; border-radius: 14px; padding: 16px; min-height: 120px;">
+                                <div style="font-size: 13px; opacity: 0.9;">Cash &amp; Bank Balance</div>
+                                <div style="font-size: 25px; font-weight: bold;"><field name="cash_bank_balance" readonly="1" nolabel="1"/></div>
+                                <button name="action_open_cash" type="object" string="Details"
+                                        class="btn btn-sm p-0" style="color: white; text-decoration: underline;" icon="fa-external-link"/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div style="background: linear-gradient(135deg, #fc4a1a, #f7b733); color: white; border-radius: 14px; padding: 16px; min-height: 120px;">
+                                <div style="font-size: 13px; opacity: 0.9;">Customer Receivables</div>
+                                <div style="font-size: 25px; font-weight: bold;"><field name="receivable_total" readonly="1" nolabel="1"/></div>
+                                <button name="action_open_receivables" type="object" string="Details"
+                                        class="btn btn-sm p-0" style="color: white; text-decoration: underline;" icon="fa-external-link"/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div style="background: linear-gradient(135deg, #5614b0, #dbd65c); color: white; border-radius: 14px; padding: 16px; min-height: 120px;">
+                                <div style="font-size: 13px; opacity: 0.9;">Vendor Payables</div>
+                                <div style="font-size: 25px; font-weight: bold;"><field name="payable_total" readonly="1" nolabel="1"/></div>
+                                <button name="action_open_payables" type="object" string="Details"
+                                        class="btn btn-sm p-0" style="color: white; text-decoration: underline;" icon="fa-external-link"/>
+                            </div>
+                        </div>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="scalebox_dashboard_record" model="scalebox.dashboard">
+        <field name="name">Dashboard</field>
+    </record>
+
+    <record id="action_scalebox_dashboard" model="ir.actions.act_window">
+        <field name="name">Dashboard</field>
+        <field name="res_model">scalebox.dashboard</field>
+        <field name="view_mode">form</field>
+        <field name="res_id" ref="scalebox_dashboard_record"/>
+        <field name="target">current</field>
+    </record>
+
+</odoo>

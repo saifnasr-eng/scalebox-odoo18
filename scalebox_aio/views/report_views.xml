@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2026 Scalebox For Digital Services. All Rights Reserved. -->
+<odoo>
+
+    <record id="view_scalebox_report_graph" model="ir.ui.view">
+        <field name="name">scalebox.report.graph</field>
+        <field name="model">scalebox.report</field>
+        <field name="arch" type="xml">
+            <graph string="Analytics" type="bar" stacked="0" sample="1">
+                <field name="date" interval="month"/>
+                <field name="doc_type"/>
+                <field name="amount_total" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="view_scalebox_report_pivot" model="ir.ui.view">
+        <field name="name">scalebox.report.pivot</field>
+        <field name="model">scalebox.report</field>
+        <field name="arch" type="xml">
+            <pivot string="Analytics" sample="1">
+                <field name="partner_id" type="row"/>
+                <field name="doc_type" type="col"/>
+                <field name="amount_total" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="view_scalebox_report_list" model="ir.ui.view">
+        <field name="name">scalebox.report.list</field>
+        <field name="model">scalebox.report</field>
+        <field name="arch" type="xml">
+            <list create="0" edit="0" delete="0">
+                <field name="name"/>
+                <field name="doc_type"/>
+                <field name="date"/>
+                <field name="partner_id"/>
+                <field name="user_id" widget="many2one_avatar_user" optional="show"/>
+                <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+                <field name="amount_untaxed" sum="Untaxed"/>
+                <field name="amount_total" sum="Total"/>
+                <field name="currency_id" column_invisible="1"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_scalebox_report_search" model="ir.ui.view">
+        <field name="name">scalebox.report.search</field>
+        <field name="model">scalebox.report</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="partner_id"/>
+                <filter string="Sales" name="sales" domain="[('doc_type', '=', 'sale')]"/>
+                <filter string="Purchases" name="purchases" domain="[('doc_type', '=', 'purchase')]"/>
+                <filter string="Point of Sale" name="pos" domain="[('doc_type', '=', 'pos')]"/>
+                <filter string="Returns" name="returns" domain="[('doc_type', 'in', ('sale_return', 'purchase_return'))]"/>
+                <filter string="Expenses" name="expenses" domain="[('doc_type', '=', 'expense')]"/>
+                <separator/>
+                <filter string="Confirmed Only" name="done" domain="[('state', '=', 'done')]"/>
+                <group expand="0" string="Group By">
+                    <filter string="Operation Type" name="group_type" context="{'group_by': 'doc_type'}"/>
+                    <filter string="Customer / Vendor" name="group_partner" context="{'group_by': 'partner_id'}"/>
+                    <filter string="Responsible" name="group_user" context="{'group_by': 'user_id'}"/>
+                    <filter string="Month" name="group_month" context="{'group_by': 'date:month'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_scalebox_report" model="ir.actions.act_window">
+        <field name="name">Analytics</field>
+        <field name="res_model">scalebox.report</field>
+        <field name="view_mode">graph,pivot,list</field>
+        <field name="context">{'search_default_done': 1}</field>
+    </record>
+
+    <!-- Customer &amp; Vendor Statements From -->
+    <record id="action_scalebox_partner_ledger" model="ir.actions.act_window">
+        <field name="name">Partner Statements</field>
+        <field name="res_model">account.move.line</field>
+        <field name="view_mode">list,pivot</field>
+        <field name="domain">[
+            ('account_id.account_type', 'in', ('asset_receivable', 'liability_payable')),
+            ('parent_state', '=', 'posted')
+        ]</field>
+        <field name="context">{'create': False, 'search_default_group_by_partner': 1}</field>
+    </record>
+
+</odoo>

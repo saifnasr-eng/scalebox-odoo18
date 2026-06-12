@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2026 Scalebox For Digital Services. All Rights Reserved. -->
+<odoo>
+
+    <!-- ===================== Sales Return ===================== -->
+    <record id="view_sb_sale_return_list" model="ir.ui.view">
+        <field name="name">scalebox.easy.sale.return.list</field>
+        <field name="model">scalebox.easy.sale.return</field>
+        <field name="arch" type="xml">
+            <list decoration-info="state == 'draft'" decoration-muted="state == 'cancel'">
+                <field name="name"/>
+                <field name="date"/>
+                <field name="origin_id"/>
+                <field name="partner_id"/>
+                <field name="amount_total" sum="Total"/>
+                <field name="currency_id" column_invisible="1"/>
+                <field name="state" widget="badge"
+                       decoration-success="state == 'done'"
+                       decoration-info="state == 'draft'"
+                       decoration-danger="state == 'cancel'"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_sb_sale_return_form" model="ir.ui.view">
+        <field name="name">scalebox.easy.sale.return.form</field>
+        <field name="model">scalebox.easy.sale.return</field>
+        <field name="arch" type="xml">
+            <form string="Sales Return">
+                <header>
+                    <button name="action_confirm" type="object" string="Confirm Return"
+                            class="btn-primary" invisible="state != 'draft'"
+                            confirm="A credit note will be issued and stock returned automatically. Continue?"/>
+                    <button name="action_cancel" type="object" string="Cancel"
+                            invisible="state != 'done'"
+                            groups="scalebox_aio.group_scalebox_manager"/>
+                    <button name="action_draft" type="object" string="Reset to Draft"
+                            invisible="state != 'cancel'"
+                            groups="scalebox_aio.group_scalebox_manager"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,done"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_refund" type="object"
+                                class="oe_stat_button" icon="fa-file-text-o"
+                                invisible="not refund_id" string="Credit Note"/>
+                    </div>
+                    <div class="oe_title">
+                        <h1><field name="name" readonly="1"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="origin_id" readonly="state != 'draft'"
+                                   options="{'no_create': True}"/>
+                            <field name="partner_id"/>
+                            <field name="date" readonly="state != 'draft'"/>
+                            <field name="reason" readonly="state != 'draft'"/>
+                        </group>
+                        <group>
+                            <field name="refund_now" readonly="state != 'draft'"/>
+                            <field name="payment_journal_id"
+                                   invisible="not refund_now"
+                                   required="refund_now"
+                                   readonly="state != 'draft'"/>
+                            <field name="user_id" readonly="state != 'draft'"/>
+                            <field name="company_id" groups="base.group_multi_company"
+                                   readonly="state != 'draft'"/>
+                            <field name="currency_id" invisible="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Returned Lines" name="lines">
+                            <field name="line_ids" readonly="state != 'draft'">
+                                <list editable="bottom">
+                                    <field name="product_id"/>
+                                    <field name="quantity"/>
+                                    <field name="price_unit"/>
+                                    <field name="tax_ids" widget="many2many_tags" optional="show"/>
+                                    <field name="price_subtotal"/>
+                                    <field name="price_total"/>
+                                    <field name="currency_id" column_invisible="1"/>
+                                    <field name="company_id" column_invisible="1"/>
+                                </list>
+                            </field>
+                            <group class="oe_subtotal_footer">
+                                <field name="amount_untaxed"/>
+                                <field name="amount_total" class="oe_subtotal_footer_separator"/>
+                            </group>
+                        </page>
+                        <page string="Linked Documents" name="linked">
+                            <group>
+                                <field name="refund_id" readonly="1"/>
+                                <field name="picking_ids" widget="many2many_tags" readonly="1"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_sb_sale_return" model="ir.actions.act_window">
+        <field name="name">Sales Returns</field>
+        <field name="res_model">scalebox.easy.sale.return</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Record your first sales return</p>
+            <p>Select the original sale; the system issues the credit note and returns stock automatically.</p>
+        </field>
+    </record>
+
+    <!-- ===================== Purchase Return ===================== -->
+    <record id="view_sb_purchase_return_list" model="ir.ui.view">
+        <field name="name">scalebox.easy.purchase.return.list</field>
+        <field name="model">scalebox.easy.purchase.return</field>
+        <field name="arch" type="xml">
+            <list decoration-info="state == 'draft'" decoration-muted="state == 'cancel'">
+                <field name="name"/>
+                <field name="date"/>
+                <field name="origin_id"/>
+                <field name="partner_id"/>
+                <field name="amount_total" sum="Total"/>
+                <field name="currency_id" column_invisible="1"/>
+                <field name="state" widget="badge"
+                       decoration-success="state == 'done'"
+                       decoration-info="state == 'draft'"
+                       decoration-danger="state == 'cancel'"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_sb_purchase_return_form" model="ir.ui.view">
+        <field name="name">scalebox.easy.purchase.return.form</field>
+        <field name="model">scalebox.easy.purchase.return</field>
+        <field name="arch" type="xml">
+            <form string="Purchase Return">
+                <header>
+                    <button name="action_confirm" type="object" string="Confirm Return"
+                            class="btn-primary" invisible="state != 'draft'"
+                            confirm="A debit note will be posted and stock returned to the vendor automatically. Continue?"/>
+                    <button name="action_cancel" type="object" string="Cancel"
+                            invisible="state != 'done'"
+                            groups="scalebox_aio.group_scalebox_manager"/>
+                    <button name="action_draft" type="object" string="Reset to Draft"
+                            invisible="state != 'cancel'"
+                            groups="scalebox_aio.group_scalebox_manager"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,done"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_refund" type="object"
+                                class="oe_stat_button" icon="fa-file-text-o"
+                                invisible="not refund_id" string="Debit Note"/>
+                    </div>
+                    <div class="oe_title">
+                        <h1><field name="name" readonly="1"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="origin_id" readonly="state != 'draft'"
+                                   options="{'no_create': True}"/>
+                            <field name="partner_id"/>
+                            <field name="date" readonly="state != 'draft'"/>
+                            <field name="reason" readonly="state != 'draft'"/>
+                        </group>
+                        <group>
+                            <field name="refund_now" readonly="state != 'draft'"/>
+                            <field name="payment_journal_id"
+                                   invisible="not refund_now"
+                                   required="refund_now"
+                                   readonly="state != 'draft'"/>
+                            <field name="user_id" readonly="state != 'draft'"/>
+                            <field name="company_id" groups="base.group_multi_company"
+                                   readonly="state != 'draft'"/>
+                            <field name="currency_id" invisible="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Returned Lines" name="lines">
+                            <field name="line_ids" readonly="state != 'draft'">
+                                <list editable="bottom">
+                                    <field name="product_id"/>
+                                    <field name="quantity"/>
+                                    <field name="price_unit"/>
+                                    <field name="tax_ids" widget="many2many_tags" optional="show"/>
+                                    <field name="price_subtotal"/>
+                                    <field name="price_total"/>
+                                    <field name="currency_id" column_invisible="1"/>
+                                    <field name="company_id" column_invisible="1"/>
+                                </list>
+                            </field>
+                            <group class="oe_subtotal_footer">
+                                <field name="amount_untaxed"/>
+                                <field name="amount_total" class="oe_subtotal_footer_separator"/>
+                            </group>
+                        </page>
+                        <page string="Linked Documents" name="linked">
+                            <group>
+                                <field name="refund_id" readonly="1"/>
+                                <field name="picking_ids" widget="many2many_tags" readonly="1"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_sb_purchase_return" model="ir.actions.act_window">
+        <field name="name">Purchase Returns</field>
+        <field name="res_model">scalebox.easy.purchase.return</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Record your first purchase return</p>
+            <p>Select the original purchase; the system posts the debit note and returns stock to the vendor automatically.</p>
+        </field>
+    </record>
+
+</odoo>

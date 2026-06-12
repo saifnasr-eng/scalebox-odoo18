@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2026 Scalebox For Digital Services. All Rights Reserved. -->
+<odoo>
+
+    <!-- ===================== ===================== -->
+    <record id="action_report_financial" model="ir.actions.report">
+        <field name="name">Financial Report</field>
+        <field name="model">scalebox.financial.report</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">scalebox_aio.report_financial_tpl</field>
+        <field name="report_file">scalebox_aio.report_financial_tpl</field>
+    </record>
+
+    <template id="report_financial_tpl">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page" dir="rtl" style="direction: rtl; text-align: right;">
+                        <h2 class="text-center mb-2">
+                            <t t-if="o.report_type == 'pl'">Profit and Loss Statement</t>
+                            <t t-elif="o.report_type == 'bs'">Balance Sheet</t>
+                            <t t-else="">Cash Flow Statement</t>
+                        </h2>
+                        <p class="text-center">
+                            <t t-if="o.report_type != 'bs'">
+                                From <span t-field="o.date_from"/> To <span t-field="o.date_to"/>
+                            </t>
+                            <t t-else="">As of <span t-field="o.date_to"/></t>
+                        </p>
+                        <table class="table table-sm" style="direction: rtl;">
+                            <thead>
+                                <tr style="background-color: #1a1a2e; color: white;">
+                                    <th style="text-align: right;">Item</th>
+                                    <th style="text-align: left; width: 30%;">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="o.line_ids" t-as="line"
+                                    t-att-style="'background-color: #eef2f7; font-weight: bold;' if line.style == 'header' else ('font-weight: bold; border-top: 2px solid #333;' if line.style == 'total' else '')">
+                                    <td style="text-align: right;">
+                                        <span t-att-style="'padding-right: 20px;' if line.style == 'line' else ''"
+                                              t-field="line.name"/>
+                                    </td>
+                                    <td style="text-align: left;">
+                                        <span t-if="line.style != 'header'" t-field="line.balance"
+                                              t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <!-- ===================== ===================== -->
+    <record id="action_report_stock_card" model="ir.actions.report">
+        <field name="name">Product Stock Card</field>
+        <field name="model">scalebox.stock.card</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">scalebox_aio.report_stock_card_tpl</field>
+        <field name="report_file">scalebox_aio.report_stock_card_tpl</field>
+    </record>
+
+    <template id="report_stock_card_tpl">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page" dir="rtl" style="direction: rtl; text-align: right;">
+                        <h2 class="text-center mb-2">Product Stock Card</h2>
+                        <table class="table table-borderless" style="direction: rtl;">
+                            <tr>
+                                <td><strong>Product:</strong> <span t-field="o.product_id.display_name"/></td>
+                                <td><strong>Period:</strong> <span t-field="o.date_from"/> - <span t-field="o.date_to"/></td>
+                            </tr>
+                        </table>
+                        <table class="table table-sm table-bordered" style="direction: rtl;">
+                            <thead>
+                                <tr style="background-color: #1a1a2e; color: white;">
+                                    <th style="text-align: right;">Date</th>
+                                    <th style="text-align: right;">Reference</th>
+                                    <th style="text-align: right;">Customer / Vendor</th>
+                                    <th style="text-align: center;">In</th>
+                                    <th style="text-align: center;">Out</th>
+                                    <th style="text-align: center;">Balance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="background-color: #eef2f7; font-weight: bold;">
+                                    <td colspan="5" style="text-align: right;">Opening Balance</td>
+                                    <td style="text-align: center;"><span t-esc="'%.2f' % o.opening_qty"/></td>
+                                </tr>
+                                <tr t-foreach="o.line_ids" t-as="line">
+                                    <td style="text-align: right;"><span t-field="line.date" t-options='{"widget": "date"}'/></td>
+                                    <td style="text-align: right;"><span t-field="line.reference"/></td>
+                                    <td style="text-align: right;"><span t-field="line.partner_id.name"/></td>
+                                    <td style="text-align: center;"><span t-if="line.qty_in" t-esc="'%.2f' % line.qty_in"/></td>
+                                    <td style="text-align: center;"><span t-if="line.qty_out" t-esc="'%.2f' % line.qty_out"/></td>
+                                    <td style="text-align: center;"><span t-esc="'%.2f' % line.balance"/></td>
+                                </tr>
+                                <tr style="font-weight: bold; border-top: 2px solid #333;">
+                                    <td colspan="3" style="text-align: right;">Total / Closing Balance</td>
+                                    <td style="text-align: center;"><span t-esc="'%.2f' % o.total_in"/></td>
+                                    <td style="text-align: center;"><span t-esc="'%.2f' % o.total_out"/></td>
+                                    <td style="text-align: center;"><span t-esc="'%.2f' % o.closing_qty"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <!-- ===================== ===================== -->
+    <record id="action_report_detail" model="ir.actions.report">
+        <field name="name">Detailed Report</field>
+        <field name="model">scalebox.detail.report</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">scalebox_aio.report_detail_tpl</field>
+        <field name="report_file">scalebox_aio.report_detail_tpl</field>
+    </record>
+
+    <template id="report_detail_tpl">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page" dir="rtl" style="direction: rtl; text-align: right;">
+                        <h2 class="text-center mb-2">
+                            Report <t t-if="o.report_type == 'sale'">Sales</t><t t-else="">Purchases</t> Detailed
+                        </h2>
+                        <p class="text-center">
+                            From <span t-field="o.date_from"/> To <span t-field="o.date_to"/>
+                            <t t-if="o.partner_id"> | <span t-field="o.partner_id.name"/></t>
+                        </p>
+                        <table class="table table-sm table-bordered" style="direction: rtl;">
+                            <thead>
+                                <tr style="background-color: #1a1a2e; color: white;">
+                                    <th style="text-align: right;">Date</th>
+                                    <th style="text-align: right;">Reference</th>
+                                    <th style="text-align: right;">Customer / Vendor</th>
+                                    <th style="text-align: right;">Type</th>
+                                    <th style="text-align: left;">Untaxed</th>
+                                    <th style="text-align: left;">Tax</th>
+                                    <th style="text-align: left;">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="o.line_ids" t-as="line"
+                                    t-att-style="'color: #c0392b;' if line.doc_kind == 'return' else ''">
+                                    <td style="text-align: right;"><span t-field="line.date"/></td>
+                                    <td style="text-align: right;"><span t-field="line.name"/></td>
+                                    <td style="text-align: right;"><span t-field="line.partner_id.name"/></td>
+                                    <td style="text-align: right;"><span t-field="line.doc_kind"/></td>
+                                    <td style="text-align: left;"><span t-field="line.amount_untaxed" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/></td>
+                                    <td style="text-align: left;"><span t-field="line.amount_tax" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/></td>
+                                    <td style="text-align: left;"><span t-field="line.amount_total" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr style="font-weight: bold; background-color: #eef2f7;">
+                                    <td colspan="6" style="text-align: right;">Total</td>
+                                    <td style="text-align: left;"><span t-field="o.gross_total" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/></td>
+                                </tr>
+                                <tr style="font-weight: bold; background-color: #eef2f7; color: #c0392b;">
+                                    <td colspan="6" style="text-align: right;">Returns</td>
+                                    <td style="text-align: left;"><span t-field="o.returns_total" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/></td>
+                                </tr>
+                                <tr style="font-weight: bold; border-top: 2px solid #333;">
+                                    <td colspan="6" style="text-align: right;">Net</td>
+                                    <td style="text-align: left;"><span t-field="o.net_total" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2026 Scalebox For Digital Services. All Rights Reserved. -->
+<odoo>
+
+    <record id="action_report_expense_receipt" model="ir.actions.report">
+        <field name="name">Payment Voucher</field>
+        <field name="model">scalebox.expense</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">scalebox_aio.report_expense_receipt_tpl</field>
+        <field name="report_file">scalebox_aio.report_expense_receipt_tpl</field>
+        <field name="print_report_name">'Payment Voucher - %s' % (object.name)</field>
+        <field name="binding_model_id" ref="model_scalebox_expense"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <template id="report_expense_receipt_tpl">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page" dir="rtl" style="direction: rtl; text-align: right;">
+                        <div class="text-center mb-4">
+                            <h2 style="border: 2px solid #333; display: inline-block; padding: 8px 40px; border-radius: 8px;">
+                                Payment Voucher
+                            </h2>
+                        </div>
+                        <table class="table table-borderless" style="direction: rtl;">
+                            <tr>
+                                <td style="width: 25%;"><strong>Voucher No.:</strong></td>
+                                <td style="width: 25%;"><span t-field="o.name"/></td>
+                                <td style="width: 25%;"><strong>Date:</strong></td>
+                                <td style="width: 25%;"><span t-field="o.date"/></td>
+                            </tr>
+                        </table>
+                        <table class="table table-bordered" style="direction: rtl;">
+                            <tr>
+                                <td style="width: 25%; background-color: #f5f5f5;"><strong>Expense Type</strong></td>
+                                <td><span t-field="o.expense_type_id.name"/></td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #f5f5f5;"><strong>Account</strong></td>
+                                <td>
+                                    <span t-field="o.expense_type_id.account_id.code"/> -
+                                    <span t-field="o.expense_type_id.account_id.name"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #f5f5f5;"><strong>Description</strong></td>
+                                <td><span t-field="o.description"/></td>
+                            </tr>
+                            <tr t-if="o.partner_id">
+                                <td style="background-color: #f5f5f5;"><strong>Beneficiary</strong></td>
+                                <td><span t-field="o.partner_id.name"/></td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #f5f5f5;"><strong>Payment Method</strong></td>
+                                <td>
+                                    <t t-if="o.pay_method == 'cash_bank'">
+                                        <span t-field="o.journal_id.name"/>
+                                    </t>
+                                    <t t-else="">
+                                        Custody - <span t-field="o.custody_account_id.name"/>
+                                    </t>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #f5f5f5;"><strong>Amount</strong></td>
+                                <td>
+                                    <strong><span t-field="o.amount"
+                                        t-options='{"widget": "monetary", "display_currency": o.currency_id}'/></strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #f5f5f5;"><strong>Amount in Words</strong></td>
+                                <td><span t-esc="o._amount_in_words()"/></td>
+                            </tr>
+                            <tr t-if="o.move_id">
+                                <td style="background-color: #f5f5f5;"><strong>Entry Number</strong></td>
+                                <td><span t-field="o.move_id.name"/></td>
+                            </tr>
+                        </table>
+                        <br/><br/>
+                        <table class="table table-borderless text-center" style="direction: rtl;">
+                            <tr>
+                                <td style="width: 33%;"><strong>Recipient</strong><br/><br/>..................</td>
+                                <td style="width: 33%;"><strong>Accountant</strong><br/><br/>..................</td>
+                                <td style="width: 33%;"><strong>Finance Manager</strong><br/><br/>..................</td>
+                            </tr>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>

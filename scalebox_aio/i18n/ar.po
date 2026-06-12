@@ -1,0 +1,2651 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* scalebox_aio
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-12 16:50+0000\n"
+"PO-Revision-Date: 2026-06-12 16:50+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#. module: scalebox_aio
+#: model:ir.actions.report,print_report_name:scalebox_aio.action_report_expense_receipt
+msgid "'Payment Voucher - %s' % (object.name)"
+msgstr ""
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_expense_receipt_tpl
+msgid "<strong>Account</strong>"
+msgstr "<strong>الحساب</strong>"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_expense_receipt_tpl
+msgid "<strong>Accountant</strong><br/><br/>.................."
+msgstr "<strong>المحاسب</strong><br/><br/>.................."
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_expense_receipt_tpl
+msgid "<strong>Amount in Words</strong>"
+msgstr "<strong>المبلغ كتابةً</strong>"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_expense_receipt_tpl
+msgid "<strong>Amount</strong>"
+msgstr "<strong>المبلغ</strong>"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_expense_receipt_tpl
+msgid "<strong>Beneficiary</strong>"
+msgstr "<strong>المستفيد</strong>"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_expense_receipt_tpl
+msgid "<strong>Date:</strong>"
+msgstr "<strong>التاريخ:</strong>"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_expense_receipt_tpl
+msgid "<strong>Description</strong>"
+msgstr "<strong>البيان</strong>"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_expense_receipt_tpl
+msgid "<strong>Entry Number</strong>"
+msgstr "<strong>رقم القيد</strong>"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_expense_receipt_tpl
+msgid "<strong>Expense Type</strong>"
+msgstr "<strong>نوع المصروف</strong>"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_expense_receipt_tpl
+msgid "<strong>Finance Manager</strong><br/><br/>.................."
+msgstr "<strong>المدير المالي</strong><br/><br/>.................."
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_expense_receipt_tpl
+msgid "<strong>Payment Method</strong>"
+msgstr "<strong>طريقة الدفع</strong>"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_stock_card_tpl
+msgid "<strong>Period:</strong>"
+msgstr "<strong>الفترة:</strong>"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_stock_card_tpl
+msgid "<strong>Product:</strong>"
+msgstr "<strong>الصنف:</strong>"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_expense_receipt_tpl
+msgid "<strong>Recipient</strong><br/><br/>.................."
+msgstr "<strong>المستلم</strong><br/><br/>.................."
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_expense_receipt_tpl
+msgid "<strong>Voucher No.:</strong>"
+msgstr "<strong>رقم السند:</strong>"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_sale_return_form
+msgid ""
+"A credit note will be issued and stock returned automatically. Continue?"
+msgstr "سيتم إصدار إشعار دائن وإرجاع المخزون تلقائياً. متابعة؟"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_purchase_return_form
+msgid ""
+"A debit note will be posted and stock returned to the vendor automatically. "
+"Continue?"
+msgstr "سيتم تسجيل إشعار مدين وإرجاع المخزون للمورد تلقائياً. متابعة؟"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense_type__account_id
+msgid "Account"
+msgstr "الحساب"
+
+#. module: scalebox_aio
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_accounting_parent
+msgid "Accounting"
+msgstr "الحسابات"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__message_needaction
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__message_needaction
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__message_needaction
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__message_needaction
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense_type__active
+msgid "Active"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__activity_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__activity_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__activity_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__activity_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__activity_exception_decoration
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__activity_exception_decoration
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__activity_exception_decoration
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__activity_exception_decoration
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__activity_state
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__activity_state
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__activity_state
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__activity_state
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__activity_type_icon
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__activity_type_icon
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__activity_type_icon
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__activity_type_icon
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_purchase.py:0
+#: code:addons/scalebox_aio/models/easy_returns.py:0
+#: code:addons/scalebox_aio/models/easy_sale.py:0
+msgid "Add at least one line before confirming."
+msgstr "أضف بنداً واحداً على الأقل قبل التأكيد."
+
+#. module: scalebox_aio
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_pickings
+msgid "All Stock Operations"
+msgstr "كل حركات المخزون"
+
+#. module: scalebox_aio
+#: model:res.groups,comment:scalebox_aio.group_scalebox_manager
+msgid ""
+"All user rights, plus: cancel, delete, settings, chart of accounts, journal "
+"entries, and main financial reports."
+msgstr ""
+"كل صلاحيات المستخدم، بالإضافة إلى: الإلغاء، الحذف، الإعدادات، شجرة الحسابات،"
+" القيود اليومية، والتقارير المالية الرئيسية."
+
+#. module: scalebox_aio
+#: model:res.groups,name:scalebox_aio.group_scalebox_negative
+msgid "Allowed to Sell Below Stock"
+msgstr "مسموح له البيع بالسالب"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__amount
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report_line__balance
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_financial_tpl
+msgid "Amount"
+msgstr "المبلغ"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_report
+#: model:ir.ui.menu,name:scalebox_aio.menu_scalebox_analytics
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_report_graph
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_report_pivot
+msgid "Analytics"
+msgstr "التحليلات"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_financial_tpl
+msgid "As of"
+msgstr "حتى تاريخ"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Assets"
+msgstr "الأصول"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__message_attachment_count
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__message_attachment_count
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__message_attachment_count
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__message_attachment_count
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_line__qty_available
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_line__qty_available
+msgid "Available in Warehouse"
+msgstr "المتاح بالمستودع"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase_line__qty_available
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale_line__qty_available
+msgid ""
+"Available quantity of the product in the selected warehouse at the time of "
+"the operation."
+msgstr "الكمية المتاحة من الصنف في المستودع المحدد وقت تسجيل العملية."
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card_line__balance
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_stock_card_tpl
+msgid "Balance"
+msgstr "الرصيد"
+
+#. module: scalebox_aio
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_financial_report__report_type__bs
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_financial_tpl
+msgid "Balance Sheet"
+msgstr "الميزانية العمومية"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__partner_id
+msgid "Beneficiary / Recipient"
+msgstr "المستفيد / المستلم"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_purchase_return_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_sale_return_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_purchase_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_sale_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_expense_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: scalebox_aio
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_easy_purchase__state__cancel
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_easy_purchase_return__state__cancel
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_easy_sale__state__cancel
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_easy_sale_return__state__cancel
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_expense__state__cancel
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_report__state__cancel
+msgid "Cancelled"
+msgstr "ملغاة"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_purchase.py:0
+#: code:addons/scalebox_aio/models/easy_sale.py:0
+#: code:addons/scalebox_aio/models/expense.py:0
+msgid "Cancelling operations is restricted to managers only."
+msgstr "إلغاء العمليات متاح لمدير النظام فقط."
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_purchase.py:0
+msgid "Cannot delete a confirmed purchase. Cancel it first."
+msgstr "لا يمكن حذف عملية شراء مؤكدة. قم بإلغائها أولاً."
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_returns.py:0
+msgid "Cannot delete a confirmed return. Cancel it first."
+msgstr "لا يمكن حذف مرتجع مؤكد. قم بإلغائه أولاً."
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_sale.py:0
+msgid "Cannot delete a confirmed sale. Cancel it first."
+msgstr "لا يمكن حذف عملية بيع مؤكدة. قم بإلغائها أولاً."
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/expense.py:0
+msgid "Cannot delete a posted expense. Cancel it first."
+msgstr "لا يمكن حذف مصروف مرحّل. قم بإلغائه أولاً."
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__cash_bank_balance
+msgid "Cash & Bank Balance"
+msgstr "رصيد الخزائن والبنوك"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/dashboard.py:0
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_cash_bank_report
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_cash_bank
+msgid "Cash & Bank Movements"
+msgstr "حركة الخزائن والبنوك"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "Cash &amp; Bank Balance"
+msgstr "رصيد الخزائن والبنوك"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__journal_id
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_expense__pay_method__cash_bank
+msgid "Cash / Bank"
+msgstr "الخزينة / البنك"
+
+#. module: scalebox_aio
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_financial_report__report_type__cf
+msgid "Cash Flow"
+msgstr "التدفقات النقدية"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_financial_tpl
+msgid "Cash Flow Statement"
+msgstr "قائمة التدفقات النقدية"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Cash Payments"
+msgstr "المدفوعات النقدية"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Cash Receipts"
+msgstr "المقبوضات النقدية"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_chart_of_accounts
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_coa
+msgid "Chart of Accounts"
+msgstr "شجرة الحسابات"
+
+#. module: scalebox_aio
+#: model_terms:ir.actions.act_window,help:scalebox_aio.action_scalebox_pos_config
+msgid ""
+"Click a point of sale then \"New Session\" to open the full cashier screen."
+msgstr "اضغط على نقطة البيع ثم \"جلسة جديدة\" لفتح شاشة الكاشير الكاملة."
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_detail_report_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_financial_report_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_stock_card_form
+msgid "Close"
+msgstr "إغلاق"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card__closing_qty
+msgid "Closing Balance"
+msgstr "رصيد آخر المدة"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Closing Cash Balance"
+msgstr "الرصيد النقدي الختامي"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__payment_journal_id
+msgid "Collection Method"
+msgstr "طريقة التحصيل"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__company_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report__company_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__company_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_line__company_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__company_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return_line__company_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__company_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_line__company_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__company_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return_line__company_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__company_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense_type__company_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report__company_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_report__company_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_purchase_form
+msgid "Confirm Purchase"
+msgstr "تأكيد الشراء"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_purchase_return_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_sale_return_form
+msgid "Confirm Return"
+msgstr "تأكيد المرتجع"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_sale_form
+msgid "Confirm Sale"
+msgstr "تأكيد البيع"
+
+#. module: scalebox_aio
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_easy_purchase__state__done
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_easy_purchase_return__state__done
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_easy_sale__state__done
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_easy_sale_return__state__done
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_report__state__done
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_purchase_search
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_sale_search
+msgid "Confirmed"
+msgstr "مؤكدة"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_report_search
+msgid "Confirmed Only"
+msgstr "مؤكدة فقط"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_purchase.py:0
+msgid "Could not create the vendor bill. Check product settings."
+msgstr "تعذر إنشاء فاتورة المورد. تأكد من إعدادات المنتجات."
+
+#. module: scalebox_aio
+#: model_terms:ir.actions.act_window,help:scalebox_aio.action_scalebox_expense_type
+msgid "Create an expense type"
+msgstr "أنشئ نوع مصروف"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__create_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report__create_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report_line__create_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__create_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_line__create_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__create_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return_line__create_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__create_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_line__create_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__create_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return_line__create_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__create_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense_type__create_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report__create_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report_line__create_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card__create_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card_line__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__create_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report__create_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report_line__create_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__create_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_line__create_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__create_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return_line__create_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__create_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_line__create_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__create_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return_line__create_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__create_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense_type__create_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report__create_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report_line__create_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card__create_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card_line__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_returns.py:0
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__refund_id
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_sale_return_form
+msgid "Credit Note"
+msgstr "الإشعار الدائن"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_returns.py:0
+msgid "Credit note %s is paid. Cancel the payment first."
+msgstr "الإشعار الدائن %s مسدد. قم بإلغاء السداد أولاً."
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__currency_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report__currency_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report_line__currency_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__currency_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_line__currency_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__currency_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return_line__currency_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__currency_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_line__currency_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__currency_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return_line__currency_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__currency_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report__currency_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report_line__currency_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_report__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: scalebox_aio
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_expense__pay_method__custody
+msgid "Custody"
+msgstr "عهدة"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_expense_receipt_tpl
+msgid "Custody -"
+msgstr "عهدة -"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__custody_account_id
+msgid "Custody Account"
+msgstr "حساب العهدة"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__partner_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__partner_id
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_sale_search
+msgid "Customer"
+msgstr "العميل"
+
+#. module: scalebox_aio
+#: model:ir.ui.menu,name:scalebox_aio.menu_scalebox_ledger
+msgid "Customer & Vendor Statements"
+msgstr "كشوف حسابات العملاء والموردين"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report_line__partner_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_report__partner_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card_line__partner_id
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_detail_tpl
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_stock_card_tpl
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_report_search
+msgid "Customer / Vendor"
+msgstr "العميل / المورد"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report__partner_id
+msgid "Customer / Vendor (Optional)"
+msgstr "العميل / المورد (اختياري)"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_customer_invoices
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_customer_invoices
+msgid "Customer Invoices"
+msgstr "فواتير العملاء"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_customer_payments
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_customer_payments
+msgid "Customer Payments"
+msgstr "تحصيلات العملاء"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/dashboard.py:0
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__receivable_total
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "Customer Receivables"
+msgstr "مديونية العملاء"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_customers
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_customers
+msgid "Customers"
+msgstr "العملاء"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_dashboard
+#: model:ir.ui.menu,name:scalebox_aio.menu_scalebox_dashboard
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "Dashboard"
+msgstr "لوحة البيانات"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report_line__date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_report__date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card_line__date
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_detail_tpl
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_stock_card_tpl
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_returns.py:0
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__refund_id
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_purchase_return_form
+msgid "Debit Note"
+msgstr "الإشعار المدين"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_returns.py:0
+msgid "Debit note %s is paid. Cancel the payment first."
+msgstr "الإشعار المدين %s مسدد. قم بإلغاء السداد أولاً."
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_deliveries
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_deliveries
+msgid "Deliveries"
+msgstr "التسليم"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__description
+msgid "Description"
+msgstr "البيان"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_detail_tpl
+msgid "Detailed"
+msgstr "التفصيلي"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_sb_detail_report_purchase
+msgid "Detailed Purchases Report"
+msgstr "تقرير المشتريات التفصيلي"
+
+#. module: scalebox_aio
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_purchase_detail_report
+msgid "Detailed Purchases Report (Print)"
+msgstr "تقرير المشتريات التفصيلي (طباعة)"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/detail_report.py:0
+#: model:ir.actions.report,name:scalebox_aio.action_report_detail
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_detail_report_form
+msgid "Detailed Report"
+msgstr "تقرير تفصيلي"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_sb_detail_report_sale
+msgid "Detailed Sales Report"
+msgstr "تقرير المبيعات التفصيلي"
+
+#. module: scalebox_aio
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_sale_detail_report
+msgid "Detailed Sales Report (Print)"
+msgstr "تقرير المبيعات التفصيلي (طباعة)"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "Details"
+msgstr "التفاصيل"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_line__discount
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_line__discount
+msgid "Discount %"
+msgstr "الخصم %"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_loyalty
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_loyalty
+msgid "Discount & Loyalty Programs"
+msgstr "برامج الخصم والولاء"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__display_name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report__display_name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report_line__display_name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__display_name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_line__display_name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__display_name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return_line__display_name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__display_name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_line__display_name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__display_name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return_line__display_name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__display_name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense_type__display_name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report__display_name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report_line__display_name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_report__display_name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card__display_name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card_line__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_easy_purchase__state__draft
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_easy_purchase_return__state__draft
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_easy_sale__state__draft
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_easy_sale_return__state__draft
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_expense__state__draft
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_report__state__draft
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_purchase_search
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_sale_search
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_expense_search
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_easy_purchase
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_purchase_form
+msgid "Easy Purchase"
+msgstr "شراء سريع"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_easy_sale
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_sale_form
+msgid "Easy Sale"
+msgstr "بيع سريع"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Equity"
+msgstr "حقوق الملكية"
+
+#. module: scalebox_aio
+#: model_terms:ir.actions.act_window,help:scalebox_aio.action_scalebox_expense_type
+msgid ""
+"Example: buffet, cleaning, transportation expenses — and map each type to "
+"its account in the chart of accounts."
+msgstr ""
+"مثال: مصاريف بوفيه، مصاريف نظافة، مصاريف انتقالات — واربط كل نوع بحسابه في "
+"شجرة الحسابات."
+
+#. module: scalebox_aio
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_report__doc_type__expense
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_expense_form
+msgid "Expense"
+msgstr "مصروف"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense_type__name
+msgid "Expense Name"
+msgstr "اسم المصروف"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__expense_type_id
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_expense_search
+msgid "Expense Type"
+msgstr "نوع المصروف"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_expense_type
+msgid "Expense Types"
+msgstr "أنواع المصروفات"
+
+#. module: scalebox_aio
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_expense_types
+msgid "Expense Types (Setup)"
+msgstr "أنواع المصروفات (إعداد)"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/expense.py:0
+msgid "Expense amount must be greater than zero."
+msgstr "مبلغ المصروف يجب أن يكون أكبر من صفر."
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/expense.py:0
+msgid "Expense posted with journal entry %s"
+msgstr "تم ترحيل المصروف بالقيد %s"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/dashboard.py:0
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_expense
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_expense_parent
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_expenses
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_report_search
+msgid "Expenses"
+msgstr "المصروفات"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__expenses_period
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "Expenses (Period)"
+msgstr "مصروفات الفترة"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__expenses_count
+msgid "Expenses Count"
+msgstr "عدد المصروفات"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_expense_report
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_expense_report
+msgid "Expenses Report"
+msgstr "تقرير المصروفات"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Expenses and Cost of Sales"
+msgstr "المصروفات وتكلفة المبيعات"
+
+#. module: scalebox_aio
+#: model:ir.actions.report,name:scalebox_aio.action_report_financial
+msgid "Financial Report"
+msgstr "تقرير مالي"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_sb_financial_report
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_financial_report_form
+msgid "Financial Reports"
+msgstr "التقارير المالية"
+
+#. module: scalebox_aio
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_financial_reports
+msgid "Financial Reports (BS / P&L / Cash Flow)"
+msgstr "التقارير المالية (ميزانية / أرباح وخسائر / تدفقات)"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__message_follower_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__message_follower_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__message_follower_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__message_follower_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__message_partner_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__message_partner_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__message_partner_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__message_partner_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase__activity_type_icon
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase_return__activity_type_icon
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale__activity_type_icon
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale_return__activity_type_icon
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_expense__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_detail_tpl
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_financial_tpl
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "From"
+msgstr "من"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__date_from
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report__date_from
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report__date_from
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card__date_from
+msgid "From Date"
+msgstr "من تاريخ"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_general_ledger
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_general_ledger
+msgid "General Ledger"
+msgstr "دفتر الأستاذ العام"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_purchase_search
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_sale_search
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_expense_search
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_report_search
+msgid "Group By"
+msgstr "تجميع حسب"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__has_message
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__has_message
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__has_message
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__has_message
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_financial_report_line__style__header
+msgid "Header"
+msgstr "عنوان"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report__id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report_line__id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_line__id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return_line__id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_line__id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return_line__id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense_type__id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report__id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report_line__id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_report__id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card__id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card_line__id
+msgid "ID"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__activity_exception_icon
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__activity_exception_icon
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__activity_exception_icon
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__activity_exception_icon
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase__activity_exception_icon
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase_return__activity_exception_icon
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale__activity_exception_icon
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale_return__activity_exception_icon
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_expense__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase__message_needaction
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase_return__message_needaction
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale__message_needaction
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale_return__message_needaction
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_expense__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase__message_has_error
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase__message_has_sms_error
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase_return__message_has_error
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase_return__message_has_sms_error
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale__message_has_error
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale__message_has_sms_error
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale_return__message_has_error
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale_return__message_has_sms_error
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_expense__message_has_error
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_expense__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card_line__qty_in
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_stock_card_tpl
+msgid "In"
+msgstr "وارد"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__pay_now
+msgid "Instant Collection"
+msgstr "تحصيل فوري"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__pay_now
+msgid "Instant Payment"
+msgstr "سداد فوري"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__refund_now
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__refund_now
+msgid "Instant Refund"
+msgstr "رد المبلغ فوراً"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_internal_transfers
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_internal_transfers
+msgid "Internal Transfers"
+msgstr "النقل بين المستودعات"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_purchase_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_sale_form
+msgid "Internal notes..."
+msgstr "ملاحظات داخلية..."
+
+#. module: scalebox_aio
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_stock_parent
+msgid "Inventory"
+msgstr "المخزون"
+
+#. module: scalebox_aio
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_stock_settings
+msgid "Inventory Settings"
+msgstr "إعدادات المخزون"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_sale.py:0
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__invoice_id
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_sale_form
+msgid "Invoice"
+msgstr "الفاتورة"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_sale.py:0
+msgid ""
+"Invoice %s is fully or partially paid. Cancel the payment from the "
+"Accounting screen first."
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__message_is_follower
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__message_is_follower
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__message_is_follower
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__message_is_follower
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report_line__name
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_financial_tpl
+msgid "Item"
+msgstr "البند"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/expense.py:0
+msgid "Journal %s has no default account. Check the journal settings."
+msgstr "اليومية %s ليس لها حساب افتراضي. راجع إعدادات اليومية."
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_journal_entries
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_journal_entries
+msgid "Journal Entries"
+msgstr "القيود اليومية"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/expense.py:0
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__move_id
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_expense_form
+msgid "Journal Entry"
+msgstr "القيد المحاسبي"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_journal_items
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_journal_items
+msgid "Journal Items"
+msgstr "عناصر اليومية"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_journals
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_journals_settings
+msgid "Journals Settings"
+msgstr "إعدادات اليوميات"
+
+#. module: scalebox_aio
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_landed_costs
+msgid "Landed Costs"
+msgstr "إجمالي التكاليف"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_landed_costs
+msgid "Landed Costs (Shipping & Customs)"
+msgstr "إجمالي التكاليف (تكاليف الشحن والجمارك)"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__write_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report__write_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report_line__write_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__write_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_line__write_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__write_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return_line__write_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__write_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_line__write_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__write_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return_line__write_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__write_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense_type__write_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report__write_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report_line__write_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card__write_uid
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__write_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report__write_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report_line__write_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__write_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_line__write_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__write_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return_line__write_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__write_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_line__write_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__write_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return_line__write_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__write_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense_type__write_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report__write_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report_line__write_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card__write_date
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Liabilities"
+msgstr "الالتزامات"
+
+#. module: scalebox_aio
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_financial_report_line__style__line
+msgid "Line"
+msgstr "بند"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report__line_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__line_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__line_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__line_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__line_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report__line_ids
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_purchase_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_sale_form
+msgid "Lines"
+msgstr "البنود"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_purchase_return_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_sale_return_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_purchase_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_sale_form
+msgid "Linked Documents"
+msgstr "المستندات المرتبطة"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_locations
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_locations
+msgid "Locations"
+msgstr "المواقع"
+
+#. module: scalebox_aio
+#: model:res.groups,name:scalebox_aio.group_scalebox_manager
+msgid "Manager"
+msgstr "مدير"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__message_has_error
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__message_has_error
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__message_has_error
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__message_has_error
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__message_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__message_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__message_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__message_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_purchase_search
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_sale_search
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_expense_search
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_report_search
+msgid "Month"
+msgstr "الشهر"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card__line_ids
+msgid "Moves"
+msgstr "الحركات"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__my_activity_date_deadline
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__my_activity_date_deadline
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__my_activity_date_deadline
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__my_activity_date_deadline
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__name
+msgid "Name"
+msgstr ""
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_sale.py:0
+msgid ""
+"Negative stock selling is not allowed. The following products have insufficient stock in warehouse %s:\n"
+"%s"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report__net_total
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_detail_tpl
+msgid "Net"
+msgstr "الصافي"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Net Cash Flow for the Period"
+msgstr "صافي التدفق النقدي للفترة"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Net Earnings (Current & Unallocated)"
+msgstr "صافي الأرباح (الفترة الحالية وغير المرحّلة)"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Net Profit / (Loss)"
+msgstr "صافي الربح / (الخسارة)"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__net_sales_period
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "Net Sales (Period)"
+msgstr "صافي المبيعات (الفترة)"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__net_period
+msgid "Net of the Period (After Returns & Expenses)"
+msgstr "صافي الفترة (بعد المرتجعات والمصروفات)"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "Net of the Period (After Returns &amp; Expenses)"
+msgstr "صافي الفترة (بعد المرتجعات والمصروفات)"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_purchase.py:0
+#: code:addons/scalebox_aio/models/easy_returns.py:0
+#: code:addons/scalebox_aio/models/easy_sale.py:0
+#: code:addons/scalebox_aio/models/expense.py:0
+msgid "New"
+msgstr "جديد"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__activity_date_deadline
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__activity_date_deadline
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__activity_date_deadline
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__activity_date_deadline
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__activity_summary
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__activity_summary
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__activity_summary
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__activity_summary
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__activity_type_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__activity_type_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__activity_type_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__activity_type_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_returns.py:0
+msgid "No credit note yet."
+msgstr "لا يوجد إشعار دائن بعد."
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_returns.py:0
+msgid "No debit note yet."
+msgstr "لا يوجد إشعار مدين بعد."
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_purchase.py:0
+#: code:addons/scalebox_aio/models/easy_sale.py:0
+msgid "No invoice yet."
+msgstr "لا توجد فاتورة بعد."
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/expense.py:0
+msgid "No journal entry yet."
+msgstr "لا يوجد قيد بعد."
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/expense.py:0
+msgid "No miscellaneous journal found in this company."
+msgstr "لا توجد يومية عمليات متنوعة في هذه الشركة."
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_returns.py:0
+msgid "Not enough delivered/received quantities to return: %s"
+msgstr "لا توجد كميات مستلمة/مسلّمة كافية لإرجاع: %s"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__note
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__note
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__note
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_purchase_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_sale_form
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_expense_form
+msgid "Notes..."
+msgstr "ملاحظات..."
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__message_needaction_counter
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__message_needaction_counter
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__message_needaction_counter
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__message_needaction_counter
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__message_has_error_counter
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__message_has_error_counter
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__message_has_error_counter
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__message_has_error_counter
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase__message_needaction_counter
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase_return__message_needaction_counter
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale__message_needaction_counter
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale_return__message_needaction_counter
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_expense__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase__message_has_error_counter
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase_return__message_has_error_counter
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale__message_has_error_counter
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale_return__message_has_error_counter
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_expense__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale_return__refund_now
+msgid "On confirmation, a payment for the credit note amount is registered."
+msgstr "عند التأكيد يتم تسجيل سند صرف بقيمة الإشعار الدائن."
+
+#. module: scalebox_aio
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase__pay_now
+msgid ""
+"On confirmation, a payment for the full bill amount is registered "
+"automatically."
+msgstr "عند التأكيد يتم تسجيل سند صرف بكامل قيمة الفاتورة تلقائياً."
+
+#. module: scalebox_aio
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase_return__refund_now
+msgid "On confirmation, a receipt for the debit note amount is registered."
+msgstr "عند التأكيد يتم تسجيل سند قبض بقيمة الإشعار المدين."
+
+#. module: scalebox_aio
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale__pay_now
+msgid ""
+"On confirmation, a receipt for the full invoice amount is registered "
+"automatically."
+msgstr "عند التأكيد يتم تسجيل سند قبض بكامل قيمة الفاتورة تلقائياً."
+
+#. module: scalebox_aio
+#: model_terms:ir.actions.act_window,help:scalebox_aio.action_scalebox_easy_purchase
+msgid ""
+"One screen: purchase order, stock receipt, vendor bill, and payment — all in"
+" one click."
+msgstr ""
+"شاشة واحدة: أمر الشراء، استلام المخزون، فاتورة المورد، والسداد — كلها بضغطة "
+"واحدة."
+
+#. module: scalebox_aio
+#: model_terms:ir.actions.act_window,help:scalebox_aio.action_scalebox_easy_sale
+msgid ""
+"One screen: sale order, stock delivery, invoice, and payment — all in one "
+"click."
+msgstr ""
+"شاشة واحدة: أمر البيع، تسليم المخزون، الفاتورة، والتحصيل — كلها بضغطة واحدة."
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/expense.py:0
+msgid "Only cancelled expenses can be reset to draft."
+msgstr "يمكن إرجاع المصروفات الملغاة فقط إلى مسودة."
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_purchase.py:0
+#: code:addons/scalebox_aio/models/easy_sale.py:0
+msgid "Only cancelled operations can be reset to draft."
+msgstr "يمكن إرجاع العمليات الملغاة فقط إلى مسودة."
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_returns.py:0
+msgid "Only cancelled returns can be reset to draft."
+msgstr "يمكن إرجاع المرتجعات الملغاة فقط إلى مسودة."
+
+#. module: scalebox_aio
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_pos_config
+msgid "Open Point of Sale"
+msgstr "فتح نقطة البيع"
+
+#. module: scalebox_aio
+#: model_terms:ir.actions.act_window,help:scalebox_aio.action_scalebox_pos_config
+msgid "Open a selling session"
+msgstr "افتح جلسة البيع"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card__opening_qty
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_stock_card_tpl
+msgid "Opening Balance"
+msgstr "رصيد أول المدة"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Opening Cash Balance"
+msgstr "الرصيد النقدي الافتتاحي"
+
+#. module: scalebox_aio
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_detail_report_line__doc_kind__doc
+msgid "Operation"
+msgstr "عملية"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_report__doc_type
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_report_search
+msgid "Operation Type"
+msgstr "نوع العملية"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_picking_types
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_picking_types
+msgid "Operation Types"
+msgstr "أنواع العمليات"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_purchase.py:0
+msgid "Operation confirmed: Purchase order %s | Bill %s"
+msgstr "تم تأكيد العملية: أمر الشراء %s | الفاتورة %s"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_sale.py:0
+msgid "Operation confirmed: Sale order %s | Invoice %s"
+msgstr "تم تأكيد العملية: أمر البيع %s | الفاتورة %s"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "Operations:"
+msgstr "عدد العمليات:"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_expense__partner_id
+msgid "Optional: the employee or party receiving the amount."
+msgstr "اختياري: الموظف أو الجهة المستلمة للمبلغ."
+
+#. module: scalebox_aio
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_pos_orders
+msgid "Orders"
+msgstr "الطلبات"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__origin_id
+msgid "Original Purchase Operation"
+msgstr "عملية الشراء الأصلية"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__origin_id
+msgid "Original Sale Operation"
+msgstr "عملية البيع الأصلية"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card_line__qty_out
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_stock_card_tpl
+msgid "Out"
+msgstr "منصرف"
+
+#. module: scalebox_aio
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_report__doc_type__pos
+msgid "POS"
+msgstr "نقطة بيع"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/dashboard.py:0
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_pos_orders
+msgid "POS Orders"
+msgstr "طلبات نقاط البيع"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_pos_report
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_pos_report
+msgid "POS Reports"
+msgstr "تقارير نقاط البيع"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__pos_sales_period
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "POS Sales (Period)"
+msgstr "مبيعات نقاط البيع (الفترة)"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__pos_sales_today
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "POS Sales (Today)"
+msgstr "مبيعات نقاط البيع (اليوم)"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_pos_sessions
+msgid "POS Sessions"
+msgstr "جلسات نقاط البيع"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_partner_ledger
+msgid "Partner Statements"
+msgstr "كشوف الحسابات"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__payment_journal_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__pay_method
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_expense_search
+msgid "Payment Method"
+msgstr "طريقة الدفع"
+
+#. module: scalebox_aio
+#: model:ir.actions.report,name:scalebox_aio.action_report_expense_receipt
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_expense_receipt_tpl
+msgid "Payment Voucher"
+msgstr "سند صرف"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_physical_inventory
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_physical_inventory
+msgid "Physical Inventory"
+msgstr "الجرد المادي"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_pos_config
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_pos_parent
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_report_search
+msgid "Point of Sale"
+msgstr "نقاط البيع"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_expense_form
+msgid "Post"
+msgstr "ترحيل"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/expense.py:0
+msgid "Post the expense before printing the voucher."
+msgstr "قم بترحيل المصروف أولاً قبل طباعة السند."
+
+#. module: scalebox_aio
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_expense__state__done
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_expense_search
+msgid "Posted"
+msgstr "مرحّل"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_pricelists
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_pricelists
+msgid "Pricelists"
+msgstr "قوائم الأسعار"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_detail_report_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_financial_report_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_stock_card_form
+msgid "Print PDF"
+msgstr "طباعة PDF"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_expense_form
+msgid "Print Voucher"
+msgstr "طباعة سند صرف"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_line__product_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return_line__product_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_line__product_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return_line__product_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card__product_id
+msgid "Product"
+msgstr "المنتج"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_product_categories
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_product_categories
+msgid "Product Categories"
+msgstr "فئات المنتجات"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/stock_card.py:0
+#: model:ir.actions.act_window,name:scalebox_aio.action_sb_stock_card
+#: model:ir.actions.report,name:scalebox_aio.action_report_stock_card
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_stock_card_tpl
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_stock_card_form
+msgid "Product Stock Card"
+msgstr "كارت حركة صنف"
+
+#. module: scalebox_aio
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_stock_card
+msgid "Product Stock Card (Print)"
+msgstr "كارت حركة صنف (طباعة)"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_products
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_products
+msgid "Products"
+msgstr "المنتجات"
+
+#. module: scalebox_aio
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_financial_report__report_type__pl
+msgid "Profit and Loss"
+msgstr "الأرباح والخسائر"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_financial_tpl
+msgid "Profit and Loss Statement"
+msgstr "قائمة الأرباح والخسائر"
+
+#. module: scalebox_aio
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_report__doc_type__purchase
+msgid "Purchase"
+msgstr "شراء"
+
+#. module: scalebox_aio
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_purchase_report
+msgid "Purchase Analysis (Charts)"
+msgstr "تحليل المشتريات (رسوم بيانية)"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_line__easy_purchase_id
+msgid "Purchase Operation"
+msgstr "عملية الشراء"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/dashboard.py:0
+#: model:ir.ui.menu,name:scalebox_aio.menu_scalebox_purchases
+msgid "Purchase Operations"
+msgstr "عمليات الشراء"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__purchase_order_id
+msgid "Purchase Order"
+msgstr "أمر الشراء"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_purchase_report
+msgid "Purchase Reports"
+msgstr "تقارير المشتريات"
+
+#. module: scalebox_aio
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_report__doc_type__purchase_return
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_purchase_return_form
+msgid "Purchase Return"
+msgstr "مرتجع مشتريات"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/dashboard.py:0
+#: model:ir.actions.act_window,name:scalebox_aio.action_sb_purchase_return
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_purchase_returns
+msgid "Purchase Returns"
+msgstr "مرتجعات المشتريات"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__purchase_returns_period
+msgid "Purchase Returns (Period)"
+msgstr "مرتجعات المشتريات (الفترة)"
+
+#. module: scalebox_aio
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_detail_report__report_type__purchase
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_purchases_parent
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_detail_tpl
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_report_search
+msgid "Purchases"
+msgstr "المشتريات"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__purchases_period
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "Purchases (Period)"
+msgstr "مشتريات الفترة"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__purchases_count
+msgid "Purchases Count"
+msgstr "عدد عمليات الشراء"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_line__quantity
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return_line__quantity
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_line__quantity
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return_line__quantity
+msgid "Quantity"
+msgstr "الكمية"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_receipts
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_receipts
+msgid "Receipts"
+msgstr "الاستلام"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_payments
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_payments
+msgid "Receipts & Payment Vouchers"
+msgstr "سندات القبض والصرف"
+
+#. module: scalebox_aio
+#: model_terms:ir.actions.act_window,help:scalebox_aio.action_scalebox_expense
+msgid "Record your first expense"
+msgstr "سجّل أول مصروف"
+
+#. module: scalebox_aio
+#: model_terms:ir.actions.act_window,help:scalebox_aio.action_scalebox_easy_purchase
+msgid "Record your first purchase"
+msgstr "سجّل أول عملية شراء"
+
+#. module: scalebox_aio
+#: model_terms:ir.actions.act_window,help:scalebox_aio.action_sb_purchase_return
+msgid "Record your first purchase return"
+msgstr "سجّل أول مرتجع مشتريات"
+
+#. module: scalebox_aio
+#: model_terms:ir.actions.act_window,help:scalebox_aio.action_scalebox_easy_sale
+msgid "Record your first sale"
+msgstr "سجّل أول عملية بيع"
+
+#. module: scalebox_aio
+#: model_terms:ir.actions.act_window,help:scalebox_aio.action_sb_sale_return
+msgid "Record your first sales return"
+msgstr "سجّل أول مرتجع مبيعات"
+
+#. module: scalebox_aio
+#: model:res.groups,comment:scalebox_aio.group_scalebox_user
+msgid ""
+"Records and confirms sales, purchases, returns, expenses and payments. "
+"Cannot cancel, delete or access settings."
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report_line__name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_report__name
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card_line__reference
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_detail_tpl
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_stock_card_tpl
+msgid "Reference"
+msgstr "المرجع"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "Refresh"
+msgstr "تحديث"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__payment_journal_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__payment_journal_id
+msgid "Refund Method"
+msgstr "طريقة الرد"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report__report_type
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report__report_type
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_detail_tpl
+msgid "Report"
+msgstr "التقرير"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_purchase_return_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_sale_return_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_purchase_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_sale_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_expense_form
+msgid "Reset to Draft"
+msgstr "إرجاع لمسودة"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__user_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__user_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__user_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__user_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__user_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_report__user_id
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_report_search
+msgid "Responsible"
+msgstr "المسؤول"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__activity_user_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__activity_user_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__activity_user_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__activity_user_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return_line__return_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return_line__return_id
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_detail_report_line__doc_kind__return
+msgid "Return"
+msgstr "المرتجع"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__reason
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__reason
+msgid "Return Reason"
+msgstr "سبب الإرجاع"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_returns.py:0
+msgid "Return confirmed: Credit note %s"
+msgstr "تم تأكيد المرتجع: إشعار دائن %s"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_returns.py:0
+msgid "Return confirmed: Debit note %s"
+msgstr "تم تأكيد المرتجع: إشعار مدين %s"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_purchase_return_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_sale_return_form
+msgid "Returned Lines"
+msgstr "البنود المرتجعة"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_returns.py:0
+msgid ""
+"Returned quantity of %s exceeds the purchased quantity of the original "
+"operation."
+msgstr "الكمية المرتجعة من %s تتجاوز الكمية المشتراة في العملية الأصلية."
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_returns.py:0
+msgid ""
+"Returned quantity of %s exceeds the sold quantity of the original operation."
+msgstr "الكمية المرتجعة من %s تتجاوز الكمية المباعة في العملية الأصلية."
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_detail_tpl
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_report_search
+msgid "Returns"
+msgstr "المرتجعات"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "Returns:"
+msgstr "مرتجعات:"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Revenue"
+msgstr "الإيرادات"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_routes
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_routes
+msgid "Routes"
+msgstr "المسارات"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__message_has_sms_error
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__message_has_sms_error
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__message_has_sms_error
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__message_has_sms_error
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_report__doc_type__sale
+msgid "Sale"
+msgstr "بيع"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_line__easy_sale_id
+msgid "Sale Operation"
+msgstr "عملية البيع"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__sale_order_id
+msgid "Sale Order"
+msgstr "أمر البيع"
+
+#. module: scalebox_aio
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_detail_report__report_type__sale
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_sales_parent
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_detail_tpl
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_report_search
+msgid "Sales"
+msgstr "المبيعات"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__sales_period
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "Sales (Period)"
+msgstr "مبيعات الفترة"
+
+#. module: scalebox_aio
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_sale_report
+msgid "Sales Analysis (Charts)"
+msgstr "تحليل المبيعات (رسوم بيانية)"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__sales_count
+msgid "Sales Count"
+msgstr "عدد عمليات البيع"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/dashboard.py:0
+#: model:ir.ui.menu,name:scalebox_aio.menu_scalebox_sales
+msgid "Sales Operations"
+msgstr "عمليات البيع"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_sale_report
+msgid "Sales Reports"
+msgstr "تقارير المبيعات"
+
+#. module: scalebox_aio
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_report__doc_type__sale_return
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_sale_return_form
+msgid "Sales Return"
+msgstr "مرتجع مبيعات"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/dashboard.py:0
+#: model:ir.actions.act_window,name:scalebox_aio.action_sb_sale_return
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_sale_returns
+msgid "Sales Returns"
+msgstr "مرتجعات المبيعات"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__sale_returns_period
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "Sales Returns (Period)"
+msgstr "مرتجعات المبيعات (الفترة)"
+
+#. module: scalebox_aio
+#: model:ir.model,name:scalebox_aio.model_scalebox_report
+msgid "Scalebox - Analytics"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model,name:scalebox_aio.model_scalebox_dashboard
+msgid "Scalebox - Dashboard"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model,name:scalebox_aio.model_scalebox_detail_report
+msgid "Scalebox - Detailed Report"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model,name:scalebox_aio.model_scalebox_detail_report_line
+msgid "Scalebox - Detailed Report Line"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model,name:scalebox_aio.model_scalebox_easy_purchase
+msgid "Scalebox - Easy Purchase"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model,name:scalebox_aio.model_scalebox_easy_purchase_line
+msgid "Scalebox - Easy Purchase Line"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model,name:scalebox_aio.model_scalebox_easy_sale
+msgid "Scalebox - Easy Sale"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model,name:scalebox_aio.model_scalebox_easy_sale_line
+msgid "Scalebox - Easy Sale Line"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model,name:scalebox_aio.model_scalebox_expense
+msgid "Scalebox - Expense"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model,name:scalebox_aio.model_scalebox_expense_type
+msgid "Scalebox - Expense Type"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model,name:scalebox_aio.model_scalebox_financial_report_line
+msgid "Scalebox - Financial Report Line"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model,name:scalebox_aio.model_scalebox_financial_report
+msgid "Scalebox - Financial Reports"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model,name:scalebox_aio.model_scalebox_stock_card
+msgid "Scalebox - Product Stock Card"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model,name:scalebox_aio.model_scalebox_easy_purchase_return
+msgid "Scalebox - Purchase Return"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model,name:scalebox_aio.model_scalebox_easy_purchase_return_line
+msgid "Scalebox - Purchase Return Line"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model,name:scalebox_aio.model_scalebox_return_mixin
+msgid "Scalebox - Returns Base"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model,name:scalebox_aio.model_scalebox_easy_sale_return
+msgid "Scalebox - Sales Return"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model,name:scalebox_aio.model_scalebox_easy_sale_return_line
+msgid "Scalebox - Sales Return Line"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model,name:scalebox_aio.model_scalebox_stock_card_line
+msgid "Scalebox - Stock Card Line"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.module.category,description:scalebox_aio.module_category_scalebox
+msgid "Scalebox All-in-One access rights"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.module.category,name:scalebox_aio.module_category_scalebox
+#: model:ir.ui.menu,name:scalebox_aio.menu_scalebox_root
+msgid "Scalebox ERP"
+msgstr "Scalebox ERP"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/expense.py:0
+msgid "Select a cash or bank journal."
+msgstr "اختر الخزينة أو البنك."
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_sale.py:0
+msgid ""
+"Select a collection method (cash or bank) or disable instant collection."
+msgstr "اختر طريقة التحصيل (خزينة أو بنك) أو ألغِ خيار التحصيل الفوري."
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_purchase.py:0
+msgid "Select a payment method (cash or bank) or disable instant payment."
+msgstr "اختر طريقة السداد (خزينة أو بنك) أو ألغِ خيار السداد الفوري."
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_returns.py:0
+msgid "Select a refund method or disable instant refund."
+msgstr "اختر طريقة الرد أو ألغِ خيار الرد الفوري."
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/expense.py:0
+msgid "Select the custody account."
+msgstr "اختر حساب العهدة."
+
+#. module: scalebox_aio
+#: model_terms:ir.actions.act_window,help:scalebox_aio.action_scalebox_expense
+msgid ""
+"Select the expense type and payment method; the system posts the journal "
+"entry automatically and prints the voucher."
+msgstr ""
+"اختر نوع المصروف وطريقة الدفع، والنظام يسجّل القيد المحاسبي تلقائياً ويطبع "
+"سند الصرف."
+
+#. module: scalebox_aio
+#: model_terms:ir.actions.act_window,help:scalebox_aio.action_sb_purchase_return
+msgid ""
+"Select the original purchase; the system posts the debit note and returns "
+"stock to the vendor automatically."
+msgstr ""
+"اختر عملية الشراء الأصلية، والنظام يسجل الإشعار المدين ويرجع المخزون للمورد "
+"تلقائياً."
+
+#. module: scalebox_aio
+#: model_terms:ir.actions.act_window,help:scalebox_aio.action_sb_sale_return
+msgid ""
+"Select the original sale; the system issues the credit note and returns "
+"stock automatically."
+msgstr ""
+"اختر عملية البيع الأصلية، والنظام يصدر الإشعار الدائن ويرجع المخزون "
+"تلقائياً."
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report_line__sequence
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report_line__sequence
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card_line__sequence
+msgid "Sequence"
+msgstr "الترتيب"
+
+#. module: scalebox_aio
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_pos_sessions
+msgid "Sessions"
+msgstr "الجلسات"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Set the start date for this report."
+msgstr "حدد تاريخ البداية لهذا التقرير."
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/detail_report.py:0
+#: code:addons/scalebox_aio/models/stock_card.py:0
+msgid "Start date must be before end date."
+msgstr "تاريخ البداية يجب أن يسبق تاريخ النهاية."
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_purchase_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_sale_form
+msgid "Statement"
+msgstr "كشف الحساب"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_purchase.py:0
+#: code:addons/scalebox_aio/models/easy_sale.py:0
+msgid "Statement: %s"
+msgstr "كشف حساب: %s"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__state
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__state
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__state
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__state
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__state
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_report__state
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_purchase_search
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_sale_search
+msgid "Status"
+msgstr "الحالة"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase__activity_state
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase_return__activity_state
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale__activity_state
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale_return__activity_state
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_expense__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_stock_report
+msgid "Stock Moves Analysis (Charts)"
+msgstr "تحليل حركة الأصناف (رسوم بيانية)"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_stock_moves_report
+msgid "Stock Moves Report"
+msgstr "تقرير حركة الأصناف"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_stock_quants
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_quants
+msgid "Stock On Hand"
+msgstr "الأرصدة المخزنية"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_pickings
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__picking_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__picking_ids
+msgid "Stock Operations"
+msgstr "حركات المخزون"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__picking_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__picking_ids
+msgid "Stock Returns"
+msgstr "مرتجعات المخزون"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report_line__style
+msgid "Style"
+msgstr "النمط"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report_line__amount_tax
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_detail_tpl
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_detail_report_form
+msgid "Tax"
+msgstr "الضريبة"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_line__tax_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return_line__tax_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_line__tax_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return_line__tax_ids
+msgid "Taxes"
+msgstr "الضرائب"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_expense__custody_account_id
+msgid "The custody account to be credited."
+msgstr "حساب العهدة الذي سيتم جعله دائناً."
+
+#. module: scalebox_aio
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_expense_type__account_id
+msgid "The expense account to be debited when posting the expense."
+msgstr "حساب المصروف الذي سيتم جعله مديناً عند تسجيل المصروف."
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_expense_form
+msgid "The journal entry will be posted automatically. Continue?"
+msgstr "سيتم تسجيل القيد المحاسبي تلقائياً. متابعة؟"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_purchase_form
+msgid ""
+"The purchase order, stock receipt and vendor bill will be created "
+"automatically. Continue?"
+msgstr ""
+"سيتم إنشاء أمر الشراء واستلام المخزون وتسجيل فاتورة المورد تلقائياً. متابعة؟"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_sale_form
+msgid ""
+"The sale order, stock delivery and invoice will be created automatically. "
+"Continue?"
+msgstr "سيتم إنشاء أمر البيع وتسليم المخزون وإصدار الفاتورة تلقائياً. متابعة؟"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_purchase_search
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_sale_search
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_expense_search
+msgid "This Month"
+msgstr "هذا الشهر"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_purchase.py:0
+#: code:addons/scalebox_aio/models/easy_returns.py:0
+#: code:addons/scalebox_aio/models/easy_sale.py:0
+#: code:addons/scalebox_aio/models/expense.py:0
+msgid "This action is restricted to managers only."
+msgstr "هذه العملية متاحة لمدير النظام فقط."
+
+#. module: scalebox_aio
+#: model:ir.model.constraint,message:scalebox_aio.constraint_scalebox_expense_type_name_company_uniq
+msgid "This expense name already exists in this company."
+msgstr "اسم المصروف موجود بالفعل في هذه الشركة."
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_detail_tpl
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_financial_tpl
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "To"
+msgstr "إلى"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__date_to
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report__date_to
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report__date_to
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card__date_to
+msgid "To Date"
+msgstr "إلى تاريخ"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__sales_today
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "Today Sales"
+msgstr "مبيعات اليوم"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report__gross_total
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report_line__amount_total
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__amount_total
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_line__price_total
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__amount_total
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return_line__price_total
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__amount_total
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_line__price_total
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__amount_total
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return_line__price_total
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_report__amount_total
+#: model:ir.model.fields.selection,name:scalebox_aio.selection__scalebox_financial_report_line__style__total
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_detail_tpl
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_detail_report_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_purchase_return_list
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_sale_return_list
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_purchase_list
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_sale_list
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_expense_list
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_report_list
+msgid "Total"
+msgstr "الإجمالي"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_stock_card_tpl
+msgid "Total / Closing Balance"
+msgstr "الإجمالي / رصيد آخر المدة"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Total Assets"
+msgstr "إجمالي الأصول"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Total Equity"
+msgstr "إجمالي حقوق الملكية"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Total Expenses"
+msgstr "إجمالي المصروفات"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card__total_in
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_stock_card_form
+msgid "Total In"
+msgstr "إجمالي الوارد"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Total Liabilities"
+msgstr "إجمالي الالتزامات"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Total Liabilities and Equity"
+msgstr "إجمالي الالتزامات وحقوق الملكية"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card__total_out
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_stock_card_form
+msgid "Total Out"
+msgstr "إجمالي المنصرف"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Total Payments"
+msgstr "إجمالي المدفوعات"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Total Receipts"
+msgstr "إجمالي المقبوضات"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report__returns_total
+msgid "Total Returns"
+msgstr "إجمالي المرتجعات"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Total Revenue"
+msgstr "إجمالي الإيرادات"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report_line__doc_kind
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_detail_tpl
+msgid "Type"
+msgstr "النوع"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase__activity_exception_decoration
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase_return__activity_exception_decoration
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale__activity_exception_decoration
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale_return__activity_exception_decoration
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_expense__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/financial_report.py:0
+msgid "Undefined"
+msgstr "غير محدد"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/dashboard.py:0
+msgid "Unified Analytics (Charts)"
+msgstr "التحليلات الموحدة (رسوم بيانية)"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_line__price_unit
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return_line__price_unit
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_line__price_unit
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return_line__price_unit
+msgid "Unit Price"
+msgstr "سعر الوحدة"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_uom
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_uom
+msgid "Units of Measure"
+msgstr "وحدات القياس"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report_line__amount_untaxed
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_line__price_subtotal
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return_line__price_subtotal
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_line__price_subtotal
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return_line__price_subtotal
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_report__amount_untaxed
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.report_detail_tpl
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_detail_report_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_report_list
+msgid "Untaxed"
+msgstr "قبل الضريبة"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__amount_untaxed
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__amount_untaxed
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__amount_untaxed
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__amount_untaxed
+msgid "Untaxed Total"
+msgstr "الإجمالي قبل الضريبة"
+
+#. module: scalebox_aio
+#: model:res.groups,name:scalebox_aio.group_scalebox_user
+msgid "User"
+msgstr "مستخدم"
+
+#. module: scalebox_aio
+#: model:res.groups,comment:scalebox_aio.group_scalebox_negative
+msgid ""
+"Users outside this group cannot confirm sales of storable products with "
+"insufficient stock in the selected warehouse."
+msgstr ""
+"المستخدمون خارج هذه المجموعة يُمنعون من تأكيد بيع لأصناف مخزنية رصيدها غير "
+"كافٍ في المستودع المحدد."
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__partner_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__partner_id
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_purchase_search
+msgid "Vendor"
+msgstr "المورد"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_purchase.py:0
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__invoice_id
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_easy_purchase_form
+msgid "Vendor Bill"
+msgstr "فاتورة المورد"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__vendor_ref
+msgid "Vendor Bill Reference"
+msgstr "رقم فاتورة المورد"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_vendor_bills
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_vendor_bills
+msgid "Vendor Bills"
+msgstr "فواتير الموردين"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/dashboard.py:0
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_dashboard__payable_total
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "Vendor Payables"
+msgstr "مستحقات الموردين"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_vendor_payments
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_vendor_payments
+msgid "Vendor Payments"
+msgstr "مدفوعات الموردين"
+
+#. module: scalebox_aio
+#. odoo-python
+#: code:addons/scalebox_aio/models/easy_purchase.py:0
+msgid ""
+"Vendor bill %s is fully or partially paid. Cancel the payment from the "
+"Accounting screen first."
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_vendors
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_vendors
+msgid "Vendors"
+msgstr "الموردون"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_detail_report_form
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_stock_card_form
+msgid "View"
+msgstr "عرض"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_sb_financial_report_form
+msgid "View Report"
+msgstr "عرض التقرير"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__name
+msgid "Voucher Number"
+msgstr "رقم السند"
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "Vouchers:"
+msgstr "عدد السندات:"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__warehouse_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__warehouse_id
+msgid "Warehouse"
+msgstr "المستودع"
+
+#. module: scalebox_aio
+#: model:ir.actions.act_window,name:scalebox_aio.action_scalebox_warehouses
+#: model:ir.ui.menu,name:scalebox_aio.menu_sb_warehouses
+msgid "Warehouses"
+msgstr "المستودعات"
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase__website_message_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_purchase_return__website_message_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale__website_message_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_easy_sale_return__website_message_ids
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_expense__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase__website_message_ids
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_purchase_return__website_message_ids
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale__website_message_ids
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_easy_sale_return__website_message_ids
+#: model:ir.model.fields,help:scalebox_aio.field_scalebox_expense__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: scalebox_aio
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_detail_report_line__wizard_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_financial_report_line__wizard_id
+#: model:ir.model.fields,field_description:scalebox_aio.field_scalebox_stock_card_line__wizard_id
+msgid "Wizard"
+msgstr ""
+
+#. module: scalebox_aio
+#: model_terms:ir.ui.view,arch_db:scalebox_aio.view_scalebox_dashboard_form
+msgid "📊 Scalebox Dashboard"
+msgstr "📊 لوحة بيانات Scalebox"

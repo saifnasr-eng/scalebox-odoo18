@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2026 Scalebox For Digital Services. All Rights Reserved. -->
+<odoo>
+
+    <record id="view_scalebox_easy_sale_list" model="ir.ui.view">
+        <field name="name">scalebox.easy.sale.list</field>
+        <field name="model">scalebox.easy.sale</field>
+        <field name="arch" type="xml">
+            <list decoration-info="state == 'draft'" decoration-muted="state == 'cancel'">
+                <field name="name"/>
+                <field name="date"/>
+                <field name="partner_id"/>
+                <field name="user_id" widget="many2one_avatar_user" optional="show"/>
+                <field name="amount_total" sum="Total"/>
+                <field name="currency_id" column_invisible="1"/>
+                <field name="state" widget="badge"
+                       decoration-success="state == 'done'"
+                       decoration-info="state == 'draft'"
+                       decoration-danger="state == 'cancel'"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_scalebox_easy_sale_form" model="ir.ui.view">
+        <field name="name">scalebox.easy.sale.form</field>
+        <field name="model">scalebox.easy.sale</field>
+        <field name="arch" type="xml">
+            <form string="Easy Sale">
+                <header>
+                    <button name="action_confirm" type="object" string="Confirm Sale"
+                            class="btn-primary" invisible="state != 'draft'"
+                            confirm="The sale order, stock delivery and invoice will be created automatically. Continue?"/>
+                    <button name="action_cancel" type="object" string="Cancel"
+                            invisible="state != 'done'"
+                            groups="scalebox_aio.group_scalebox_manager"/>
+                    <button name="action_draft" type="object" string="Reset to Draft"
+                            invisible="state != 'cancel'"
+                            groups="scalebox_aio.group_scalebox_manager"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,done"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_invoice" type="object"
+                                class="oe_stat_button" icon="fa-file-text-o"
+                                invisible="not invoice_id" string="Invoice"/>
+                        <button name="action_view_partner_ledger" type="object"
+                                class="oe_stat_button" icon="fa-book"
+                                invisible="not partner_id" string="Statement"/>
+                    </div>
+                    <div class="oe_title">
+                        <h1><field name="name" readonly="1"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="partner_id" readonly="state != 'draft'"/>
+                            <field name="date" readonly="state != 'draft'"/>
+                            <field name="warehouse_id" readonly="state != 'draft'"
+                                   options="{'no_create': True}"/>
+                            <field name="user_id" readonly="state != 'draft'"/>
+                        </group>
+                        <group>
+                            <field name="pay_now" readonly="state != 'draft'"/>
+                            <field name="payment_journal_id"
+                                   invisible="not pay_now"
+                                   required="pay_now"
+                                   readonly="state != 'draft'"/>
+                            <field name="company_id" groups="base.group_multi_company"
+                                   readonly="state != 'draft'"/>
+                            <field name="currency_id" invisible="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Lines" name="lines">
+                            <field name="line_ids" readonly="state != 'draft'">
+                                <list editable="bottom">
+                                    <field name="product_id"/>
+                                    <field name="qty_available" optional="show"/>
+                                    <field name="quantity"/>
+                                    <field name="price_unit"/>
+                                    <field name="discount" optional="show"/>
+                                    <field name="tax_ids" widget="many2many_tags" optional="show"/>
+                                    <field name="price_subtotal"/>
+                                    <field name="price_total"/>
+                                    <field name="currency_id" column_invisible="1"/>
+                                    <field name="company_id" column_invisible="1"/>
+                                </list>
+                            </field>
+                            <group class="oe_subtotal_footer">
+                                <field name="amount_untaxed"/>
+                                <field name="amount_total" class="oe_subtotal_footer_separator"/>
+                            </group>
+                        </page>
+                        <page string="Notes" name="notes">
+                            <field name="note" placeholder="Internal notes..."/>
+                        </page>
+                        <page string="Linked Documents" name="linked">
+                            <group>
+                                <field name="sale_order_id" readonly="1"/>
+                                <field name="invoice_id" readonly="1"/>
+                                <field name="picking_ids" widget="many2many_tags" readonly="1"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_scalebox_easy_sale_search" model="ir.ui.view">
+        <field name="name">scalebox.easy.sale.search</field>
+        <field name="model">scalebox.easy.sale</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="partner_id"/>
+                <filter string="Draft" name="draft" domain="[('state', '=', 'draft')]"/>
+                <filter string="Confirmed" name="done" domain="[('state', '=', 'done')]"/>
+                <separator/>
+                <filter string="This Month" name="this_month"
+                        domain="[('date', '&gt;=', (context_today() + relativedelta(day=1)).strftime('%Y-%m-%d'))]"/>
+                <group expand="0" string="Group By">
+                    <filter string="Customer" name="group_partner" context="{'group_by': 'partner_id'}"/>
+                    <filter string="Status" name="group_state" context="{'group_by': 'state'}"/>
+                    <filter string="Month" name="group_month" context="{'group_by': 'date:month'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_scalebox_easy_sale" model="ir.actions.act_window">
+        <field name="name">Easy Sale</field>
+        <field name="res_model">scalebox.easy.sale</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Record your first sale</p>
+            <p>One screen: sale order, stock delivery, invoice, and payment — all in one click.</p>
+        </field>
+    </record>
+
+</odoo>

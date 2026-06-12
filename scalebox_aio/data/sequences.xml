@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2026 Scalebox For Digital Services. All Rights Reserved. -->
+<odoo>
+    <data noupdate="1">
+        <record id="seq_scalebox_easy_sale" model="ir.sequence">
+            <field name="name">Scalebox Easy Sale</field>
+            <field name="code">scalebox.easy.sale</field>
+            <field name="prefix">SBS/%(year)s/</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <record id="seq_scalebox_easy_purchase" model="ir.sequence">
+            <field name="name">Scalebox Easy Purchase</field>
+            <field name="code">scalebox.easy.purchase</field>
+            <field name="prefix">SBP/%(year)s/</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <record id="seq_scalebox_expense" model="ir.sequence">
+            <field name="name">Scalebox Expenses</field>
+            <field name="code">scalebox.expense</field>
+            <field name="prefix">SBE/%(year)s/</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <record id="seq_sb_sale_return" model="ir.sequence">
+            <field name="name">Scalebox Sales Return</field>
+            <field name="code">scalebox.easy.sale.return</field>
+            <field name="prefix">SBSR/%(year)s/</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <record id="seq_sb_purchase_return" model="ir.sequence">
+            <field name="name">Scalebox Purchase Return</field>
+            <field name="code">scalebox.easy.purchase.return</field>
+            <field name="prefix">SBPR/%(year)s/</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+</odoo>
