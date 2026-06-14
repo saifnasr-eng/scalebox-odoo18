@@ -29,8 +29,10 @@ keeping all accounting and inventory postings valid and compatible with standard
 """,
     'author': 'Scalebox For Digital Services',
     'maintainer': 'Scalebox For Digital Services',
-    'website': 'https://scalebox.cloud',
+    'website': 'https://scalebox.scbox.pro',
     'license': 'OPL-1',
+    'price': 99.00,
+    'currency': 'USD',
     'depends': [
         'base',
         'mail',
