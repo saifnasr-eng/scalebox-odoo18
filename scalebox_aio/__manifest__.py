@@ -8,8 +8,6 @@
     'summary': 'Simple all-in-one ERP: sales, purchases, inventory, accounting, POS and reports in one app',
     'description': """
     'website': 'https://scalebox.scbox.pro/',
-    'price': 99.00,
-    'currency': 'USD',
 Scalebox All-in-One ERP
 =======================
 A simplified layer on top of Odoo 18 Community for small businesses (up to 10 users).
@@ -31,8 +29,6 @@ keeping all accounting and inventory postings valid and compatible with standard
     'maintainer': 'Scalebox For Digital Services',
     'website': 'https://scalebox.scbox.pro',
     'license': 'OPL-1',
-    'price': 99.00,
-    'currency': 'USD',
     'depends': [
         'base',
         'mail',
