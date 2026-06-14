@@ -67,4 +67,6 @@ keeping all accounting and inventory postings valid and compatible with standard
     'application': True,
     'installable': True,
     'auto_install': False,
+    'price': 99.00,
+    'currency': 'USD',
 }
